@@ -2,7 +2,7 @@
 
 ## How to Access
 - A working version of this project can be accessed [here](http://giantbomb.brandoncollins-bc.net/)
-- Requirments
+- Requirements
     - Google Chrome - [Download Link](https://www.google.com/chrome/)
     - Google Chrome CORS Web Extention - [Allow CORS: Access-Control-Allow-Origin Download Link](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/)
 
@@ -41,7 +41,7 @@ __Search Functionality__
 Users can search for games by typing a search query into the search bar, and clicking the search button to the right to execute the search. Upon doing so, an api request is sent with the user's search query to Giant Bomb's search API, the search result area loads until the api request is complete, and a list of search results is displayed in the data grid below upon api completion. 
 
 __Search Results__
-Prior to making a search request, a message promping the sure to complete a search is displayed on the screen. Upon completeing a search request, a data grid of search results matching the search paramters in accordance to Giant Bomb's search API is rendered. The data grid includes the following columns:
+Prior to making a search request, a message promping the sure to complete a search is displayed on the screen. Upon completing a search request, a data grid of search results matching the search paramters in accordance to Giant Bomb's search API is rendered. The data grid includes the following columns:
 - the game's id
 - the game's thumbnail
 - the game's title
@@ -53,7 +53,7 @@ The search results are paginated and show up to 10 results per page by default. 
 Search results can be filtered and/or sorted based on any column. Columns can also be hidden and shown on user desire. 
 
 __Failed Search Requests__
-If there are no results found for a user's search request, a message detailing so will be rendered rather than a data grid of results being rendered. The message will prompt the user to try a different rearch request, as well as display their entered request. This case will occur if there were no games found for the given query, or if there is an error with the API call.
+If there are no results found for a user's search request, a message detailing so will be rendered rather than a data grid of results being rendered. The message will prompt the user to try a different search request, as well as display their entered request. This case will occur if there were no games found for the given query, or if there is an error with the API call.
 
 __Adding games to cart__
 When a successful search request is made, a user can click the boxes to the left of displayed games to check them off. As games are checked off, a button below the results will display how many games are marked and offer to add them to the cart. Upon clicking the button, the given number of marked games will be added to the cart and a success message will be displayed, confirming how many games were added. Games already existing in the cart will not be added duplicate times.
