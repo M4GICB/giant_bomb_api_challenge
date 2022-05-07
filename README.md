@@ -13,7 +13,7 @@
     - `.env` file containing a Giant Bomb api key
         - `REACT_APP_API_KEY={api key}`
         - [Getting an API Key](https://www.giantbomb.com/api/)
-    - Google Chrome CORS Web Extentio
+    - Google Chrome CORS Web Extention
 - Steps
     - Clone repo
     - Run `npm start` in directory
