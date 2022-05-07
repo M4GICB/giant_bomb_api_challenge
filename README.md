@@ -16,6 +16,7 @@
     - Google Chrome CORS Web Extention
 - Steps
     - Clone repo
+    - Run `npm i` in directory
     - Run `npm start` in directory
     - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
