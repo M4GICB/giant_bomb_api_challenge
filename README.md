@@ -34,13 +34,13 @@ There is a navigation bar at the top of the website that remains displayed regar
 The home page displays a button to get to the search page and the user's cart. There is also a description provided for the two pages.
 
 ### Search Page
-__Overview__
+__Overview__\
 The search page consists of a search bar, a search button, a paginated data grid, and a button to add games to the cart. 
 
-__Search Functionality__
+__Search Functionality__\
 Users can search for games by typing a search query into the search bar, and clicking the search button to the right to execute the search. Upon doing so, an api request is sent with the user's search query to Giant Bomb's search API, the search result area loads until the api request is complete, and a list of search results is displayed in the data grid below upon api completion. 
 
-__Search Results__
+__Search Results__\
 Prior to making a search request, a message promping the sure to complete a search is displayed on the screen. Upon completing a search request, a data grid of search results matching the search paramters in accordance to Giant Bomb's search API is rendered. The data grid includes the following columns:
 - the game's id
 - the game's thumbnail
@@ -52,28 +52,28 @@ The search results are paginated and show up to 10 results per page by default. 
 
 Search results can be filtered and/or sorted based on any column. Columns can also be hidden and shown on user desire. 
 
-__Failed Search Requests__
+__Failed Search Requests__\
 If there are no results found for a user's search request, a message detailing so will be rendered rather than a data grid of results being rendered. The message will prompt the user to try a different search request, as well as display their entered request. This case will occur if there were no games found for the given query, or if there is an error with the API call.
 
-__Adding games to cart__
+__Adding games to cart__\
 When a successful search request is made, a user can click the boxes to the left of displayed games to check them off. As games are checked off, a button below the results will display how many games are marked and offer to add them to the cart. Upon clicking the button, the given number of marked games will be added to the cart and a success message will be displayed, confirming how many games were added. Games already existing in the cart will not be added duplicate times.
 
 ### Cart Page
-__Overview__
+__Overview__\
 The cart page consists of a paginated data grid of cart items, a button to remove items from the cart, and a button to proceed to checkout. The purpose of this page is to allow users to review what is currently in the user cart, and modify the cart prior to checking out if desired. Users can view more game details on each cart item via links from the cart, and can access the cart at all times.
 
-__Removing Items From Cart__
+__Removing Items From Cart__\
 Similar to the search page, a user can click the boxes to the left of displayed games to check them off. As games are checked off, a button below the data grid will display how many games are marked and offer to remove them from the cart. Upon clicking the button, the given number of marked games will be removed from the cart and the data grid will rerender displaying the new list of cart items.
 
-__Checkout__
+__Checkout__\
 The checkout button will take the user to the checkout page.
 
 ### Checkout page
-__Overview__
+__Overview__\
 The checkout page is currently more of a proof of concept page in an early stage. As a payment process was not implemented, the checkout page simply displays that the user successfully rented the games in the cart, and displays a full list of the games with their images and a link to view more info on each game. In a production business setting, this checkout page would need to be further built out to provide logic for users to enter payment and rental period info as well as include logic for handling what games are checked out for what user and how long they are checked out for.
 
 ### Game Detail Page
-__Overview__
+__Overview__\
 The game detail page allows the user to view much more info about a given game and add the game to the cart if desired. This page includes the game title, a short description, an image gallery of the game if one exists in Giant Bomb's data, and any other description information that exists for the game in Giant Bomb. There is also a futher link routing the user directly to Giant Bomb's website entry of said game.
 
 ## Known Bugs
