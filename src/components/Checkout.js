@@ -8,6 +8,8 @@ export default function Checkout() {
 
   const {cart, setCart } = useContext(CartContext);
 
+  
+
   return (
     <>
       <h1>CHECK OUT SUCCESSFUL! THE GAMES BELOW HAVE BEEN SUCCESSFULLY RENTED</h1>

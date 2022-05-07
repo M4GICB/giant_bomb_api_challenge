@@ -7,7 +7,7 @@ export default function NotFound() {
 
   return (
       <>
-      <h1>Whoopsie Daisy.... cant find paaaaaggggeeeeeee</h1>
+      <h1>OOPS... Page Not Found</h1>
       </>
     
   );

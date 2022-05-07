@@ -31,9 +31,9 @@ export default function Home() {
             <Box sx={{ width: "80%", margin: 'auto', padding: "25px" }}> 
               <Typography textAlign='center' gutterBottom variant="h3" component="div">Search Functionality</Typography>
               <Typography textAlign='left' gutterBottom variant="h4" component="div">
-                View the search page to look for games by typing game names into the provided search bar to see a list of games that match what was types.
+                View the search page to look for games by typing game names into the provided search bar to see a list of games that match what was typed.
                 A list of games will be displayed detailing an image, their title, a short description, and a link to view more info about the game.
-                Once desired games are found, games can be added to the car by being checked off and clicking the provided "Add Selected to Cart" button.
+                Once desired games are found, games can be added to the cart by being checked off and clicking the provided "Add Selected to Cart" button.
               </Typography>
             </Box>
 
@@ -43,7 +43,7 @@ export default function Home() {
                   View the cart page to see a full list of games currently added to the cart. 
                   Similar to the search page,
                   a list of games in the cart will be displayed detailing an image, their title, a short description, and a link to view more info about the game.
-                  Games can be removed from the car by being checked off and clicking the provided "Remove Selected from Cart" button.
+                  Games can be removed from the cart by being checked off and clicking the provided "Remove Selected from Cart" button.
                 </Typography>
             </Box>
 
