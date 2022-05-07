@@ -77,13 +77,13 @@ __Overview__
 The game detail page allows the user to view much more info about a given game and add the game to the cart if desired. This page includes the game title, a short description, an image gallery of the game if one exists in Giant Bomb's data, and any other description information that exists for the game in Giant Bomb. There is also a futher link routing the user directly to Giant Bomb's website entry of said game.
 
 ## Known Bugs
-- Requirement of an Allow CORS web extention.
+- Requirement of an Allow CORS web extention
     - After much research and many attempts, I was unable to get CORS handled and enabled on the NGINX server I deployed this application to. An extention to allow CORS is required when testing this application. A production ready version would require the deployed server to properly handle this.
-    - The search and game api calls canot be completed without 
-- Navigating to various pages through hyperlink path instead of through in app funciontalities currently results in 404 pages due to page routing functionality.
-    - this includes using the back and forward browser errors
+    - The search and game api calls canot be completed without the extention being turned on due to CORS errors.
+- Failed hyperlink page navigation
+    - Navigating to various pages through hyperlink paths instead of through in app funciontalities currently results in 404 pages due to page routing functionality. This includes using the back and forward browser buttons.
 - API Key exposed through network inspection
-    - despite the api call key being stored in a secret file that is not commited to git, the api key still gets passed to the network inspection
+    - Despite the api call key being stored in a secret file that is not commited to git, the api key still gets passed to the network inspection.
 - Some screens diaplay the application in unindented ways.
 
 ## Next Steps
