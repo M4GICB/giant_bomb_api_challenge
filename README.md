@@ -13,7 +13,7 @@
     - `.env` file containing a Giant Bomb api key
         - `REACT_APP_API_KEY={api key}`
         - [Getting an API Key](https://www.giantbomb.com/api/)
-    - Google Chrome CORS Web Extention
+    - [Google Chrome CORS Web Extention](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/)
 - Steps
     - Clone repo
     - Run `npm i` in directory
@@ -71,7 +71,7 @@ The checkout button will take the user to the checkout page.
 
 ### Checkout page
 __Overview__\
-The checkout page is currently more of a proof of concept page in an early stage. As a payment process was not implemented, the checkout page simply displays that the user successfully rented the games in the cart, and displays a full list of the games with their images and a link to view more info on each game. In a production business setting, this checkout page would need to be further built out to provide logic for users to enter payment and rental period info as well as include logic for handling what games are checked out for what user and how long they are checked out for.
+The checkout page is currently in an early development stage. As a payment process was not implemented, the checkout page simply displays that the user successfully rented the games in the cart, and displays a full list of the games with their images and a link to view more info on each game. In a production business setting, this checkout page would need to be further built out to provide logic for users to enter payment and rental period info as well as include logic for handling what games are checked out for what user and how long they are checked out for.
 
 ### Game Detail Page
 __Overview__\
@@ -80,12 +80,12 @@ The game detail page allows the user to view much more info about a given game a
 ## Known Bugs
 - Requirement of an Allow CORS web extention
     - After much research and many attempts, I was unable to get CORS handled and enabled on the NGINX server I deployed this application to. An extention to allow CORS is required when testing this application. A production ready version would require the deployed server to properly handle this.
-    - The search and game api calls canot be completed without the extention being turned on due to CORS errors.
+    - The search and game api calls cannot be completed without the extention being turned on due to CORS errors.
 - Failed hyperlink page navigation
     - Navigating to various pages through hyperlink paths instead of through in app functionalities currently results in 404 pages due to page routing functionality. This includes using the back and forward browser buttons.
 - API Key exposed through network inspection
     - Despite the api call key being stored in a secret file that is not commited to git, the api key still gets passed to the network inspection.
-- Some screens display the application in unintended ways.
+- Some screen sizes may make content render in unintended ways.
 
 ## Next Steps
 - Allow pressing "enter" instead of clicking "search" on the search page to execute a search query
